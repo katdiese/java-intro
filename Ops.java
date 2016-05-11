@@ -3,8 +3,25 @@ public class Ops {
     return x + y;
   }
 
+  public static int multiply(int x, int y, int z) {
+    return x * y * z;
+  }
+
+  public static int power(int x) {
+    int y = 2;
+
+    for(int i = 0; i < y; i++) {
+      x = x * x;
+    }
+
+    return x;
+  }
+
   public static void main(String [] args) {
-    System.out.println( sum(1,2) );
+    int ans = power(2);
+
+    System.out.println(ans);
+
   }
 }
 
